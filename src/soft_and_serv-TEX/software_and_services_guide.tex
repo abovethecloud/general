@@ -1,4 +1,5 @@
-%& -output-directory=../../out
+%& -output-directory=../../out -aux-directory=./tmp
+% The above does not work.. :(
 
 % XeLaTeX can use any Mac OS X font. See the setromanfont command below.
 % Input to XeLaTeX is full Unicode, so Unicode characters can be typed directly into the source.
@@ -20,13 +21,13 @@
 % To experiment, open /Applications/Font Book to examine the fonts provided on Mac OS X,
 % and change "Hoefler Text" to any of these choices.
 
+
+
 \usepackage{fontspec,xltxtra,xunicode}
 \defaultfontfeatures{Mapping=tex-text}
 \setromanfont[Mapping=tex-text]{Hoefler Text}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
 \setmonofont[Scale=MatchLowercase]{Andale Mono}
-
-
 
 
 
