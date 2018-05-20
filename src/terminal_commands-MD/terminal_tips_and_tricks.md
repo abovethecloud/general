@@ -4,7 +4,7 @@
 A better way to transfer files even remotely, due to the ability to restart after a lost connection. Better than scp and with more options.
 Example:
 
-    $ rsync -vazhP claudio@192.168.7.69:"'/Volumes/My Book 3/qBittorrent downloads/FILE_OR_DIRECTORY'" /Volumes/Compatible/DESTINATION
+    $ rsync -vazhP [USER]@LOCAL_IP:"'/Volumes/My Book 3/qBittorrent downloads/FILE_OR_DIRECTORY'" /Volumes/Compatible/DESTINATION
 
 Note that there are double quotes around the remote path. This is necessary since the string has to be parsed twice: locally and remotely. To transfer a directory, do not append a "/" at the end of the path. Doing so would result in transferring only the contents of such directory.
 Also, the options are:
