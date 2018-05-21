@@ -1056,10 +1056,12 @@ body .markdown-body
 .codehilite .il{color:#009999}
 .codehilite .gc{color:#999;background-color:#EAF2F5}
 </style><title>terminal_tips_and_tricks</title></head><body><article class="markdown-body"><h1 id="terminal-commands-to-remember">Terminal commands to remember<a class="headerlink" href="#terminal-commands-to-remember" title="Permanent link"></a></h1>
-<h5 id="rsync-options">rsync [options] &hellip;:<a class="headerlink" href="#rsync-options" title="Permanent link"></a></h5>
-<p>A better way to transfer files even remotely, due to the ability to restart after a lost connection. Better than scp and with more options.
+<p><details>
+<summary><b>rsync [options] &hellip;:</b></summary>
+<br>
+A better way to transfer files even remotely, due to the ability to restart after a lost connection. Better than scp and with more options.
 Example:</p>
-<div class="codehilite"><pre>$ rsync -vazhP claudio@192.168.7.69:&quot;&#39;/Volumes/My Book 3/qBittorrent downloads/FILE_OR_DIRECTORY&#39;&quot; /Volumes/Compatible/DESTINATION
+<div class="codehilite"><pre>$ rsync -vazhP [USER]@LOCAL_IP:&quot;&#39;/Volumes/My Book 3/qBittorrent downloads/FILE_OR_DIRECTORY&#39;&quot; /Volumes/Compatible/DESTINATION
 </pre></div>
 
 
@@ -1076,9 +1078,15 @@ Also, the options are:</p>
 </pre></div>
 
 
-<h5 id="nmap-sn">nmap -sn &hellip;:<a class="headerlink" href="#nmap-sn" title="Permanent link"></a></h5>
-<p>Command to scan the network and list all connected devices. Useful to list also the devices connected via OpenVPN (if the respective network are scanned, such as 10.8.0.0/24 or 10.8.1.0/24).
+<p></details></p>
+<p><details>
+<summary><b>nmap -sn &hellip;:</b></summary>
+<br>
+Command to scan the network and list all connected devices. Useful to list also the devices connected via OpenVPN (if the respective network are scanned, such as 10.8.0.0/24 or 10.8.1.0/24).
 Note that given the reduced amount of addresses per OpenVPN instance, a mask of 29 should be sufficient.
 Example:</p>
 <div class="codehilite"><pre>$ nmap -sn 192.168.7.0/24 10.8.0.0/29 10.8.1.0/29
-</pre></div></article></body></html>
+</pre></div>
+
+
+<p></details></p></article></body></html>

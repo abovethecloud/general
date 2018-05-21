@@ -1,6 +1,9 @@
 # Terminal commands to remember
 
-##### rsync [options] ...:
+
+<details>
+<summary><b>rsync [options] ...:</b></summary>
+<br>
 A better way to transfer files even remotely, due to the ability to restart after a lost connection. Better than scp and with more options.
 Example:
 
@@ -17,11 +20,15 @@ Also, the options are:
     -P : shows progress and preserves partial transfers
     (-u : skip files that are newer on the destination)
     (--ignore-existing: skips the update of files that already exist on the destination)
+</details>
 
 
-##### nmap -sn ...:
+<details>
+<summary><b>nmap -sn ...:</b></summary>
+<br>
 Command to scan the network and list all connected devices. Useful to list also the devices connected via OpenVPN (if the respective network are scanned, such as 10.8.0.0/24 or 10.8.1.0/24).
 Note that given the reduced amount of addresses per OpenVPN instance, a mask of 29 should be sufficient.
 Example:
 
     $ nmap -sn 192.168.7.0/24 10.8.0.0/29 10.8.1.0/29
+</details>
