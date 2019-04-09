@@ -20,6 +20,7 @@ Also, the options are:
     -P : shows progress and preserves partial transfers
     (-u : skip files that are newer on the destination)
     (--ignore-existing: skips the update of files that already exist on the destination)
+    (--size-only: skip files that match in size)
 </details>
 
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>body {
   max-width: 980px;
   border: 1px solid #ddd;
   outline: 1300px solid #fff;
@@ -841,7 +841,7 @@ body .markdown-body
     inset 0 -12px 0 rgba(0, 0, 0, .05);
 }
 
-/* Multimarkdown Critic Blocks */
+/* MultiMarkdown Critic Blocks */
 .markdown-body .critic_mark {
   background: #ff0;
 }
@@ -992,7 +992,7 @@ body .markdown-body
     page-break-after: avoid;
   }
 }
-</style><style>/*github*/
+</style><style>/*GitHub*/
 .codehilite {background-color:#fff;color:#333333;}
 .codehilite .hll {background-color:#ffffcc;}
 .codehilite .c{color:#999988;font-style:italic}
@@ -1075,11 +1075,12 @@ Also, the options are:</p>
 -P : shows progress and preserves partial transfers
 (-u : skip files that are newer on the destination)
 (--ignore-existing: skips the update of files that already exist on the destination)
+(--size-only: skip files that match in size)
 </pre></div>
 
 
-<p></details>
-<details>
+<p></details></p>
+<p><details>
 <summary><b>nmap -sn &hellip;:</b></summary>
 <br>
 Command to scan the network and list all connected devices. Useful to list also the devices connected via OpenVPN (if the respective network are scanned, such as 10.8.0.0/24 or 10.8.1.0/24).
